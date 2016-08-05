@@ -1,12 +1,13 @@
-var productNo = ['147029810079127423'];
-
+//var productNo = ['147029810079127423'];
+var productNo = ['147029961674868493'];
 var wukong = {
     //url         :   'http://wukong.com/',       //本地
-    in_url : 'http://test.openapi.wkbins.com/openapi/commonSp/insureInterface',     //悟空保投保接口
-    qu_url : 'http://test.openapi.wkbins.com/openapi/commonSp/policyQuery',         //悟空保查询保单接口
-    cl_url : 'http://test.openapi.wkbins.com/openapi/commonSp/settleClaimQuery',
+    in_url : 'http://test.openapi.wkbins.com/openapi/commonMp/insureInterface',     //悟空保投保接口
+    qu_url : 'http://test.openapi.wkbins.com/openapi/commonMp/policyQuery',         //悟空保查询保单接口
+    cl_url : 'http://test.openapi.wkbins.com/openapi/commonMp/settleClaimQuery',
 
-    app_key     :   '146760323872501112',       //悟空保平台分配的唯一商户识别码
+    //app_key     :   '146760323872501112',       //悟空保平台分配的唯一商户识别码
+    app_key     :   '147029948870683963',
     charset     :   'UTF-8',
     signType    :   'RSA',
     format      :   'JSON',

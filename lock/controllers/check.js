@@ -4,6 +4,7 @@
  * vino
  */
 (function(){
+var moment      = require('moment');
 var insure      = require('./insure.js');
 var policy      = require('./policy.js');
 
@@ -40,8 +41,8 @@ var addPolicy = function(msg, callback) {
                         policy_no       :   policyContent.policyNo,
                         channel_order_no:   docs.bizContent.channelOrderNo,
                         lock_uuid       :   msg.lockUuid,
-                        order_service_start_time   :    policyContent.createTime,
-                        policy_holder   :   policyContent.policyholder,
+                        order_service_start_time   :    moment().format("YYYYMMDDHHmmss"),
+                        policy_holder   :   msg.userid,
                         user_name       :   policyContent.userName,
                         user_phone      :   msg.userPhone,
                         user_id_type    :   msg.userIDType,

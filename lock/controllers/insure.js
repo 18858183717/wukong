@@ -29,7 +29,7 @@ var lockInsure = function(msg, callback) {
     var biz_content = {                                 //投保参数
             productNo               :   msg.productNo,     //投保的产品ID
             channelOrderNo          :   '01'+shortid.generate(),      //订单号
-            orderServiceStartTime   :   moment(Date.parse(new Date())+1000*3600*24*2).format("YYYYMMDD"),
+            orderServiceStartTime   :   moment().format("YYYYMMDDHHmmss"),
             userInfoContent         :   [
                 {
                     userKey     :   msg.lockUuid,     //用户唯一标识

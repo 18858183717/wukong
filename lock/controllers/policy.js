@@ -84,7 +84,7 @@ var findPolicy = function(msg, callback) {
                         logInfo.warn('[findPolicy] by userid');
                         callback(ErrorInfo.MONGODB_ERROR, policys);
                         return;
-                    }else{console.log(docs);
+                    }else{
                         policy_list = policys.concat(docs);
                         for(var p in policy_list){
                             policy_list[p].policy_status = config.policy_status[policy_list[p].policy_status];
